@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡OE! Editorial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    /* Estilos personalizados */
+    .navbar {
+      background-color: #30358C !important; /* Cambiar el color de fondo del navbar */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra al navbar */
+    }
+    .navbar-brand {
+      margin-right: 0; /* Eliminar el margen derecho de la marca */
+    }
+    .autores, .soy-oceana {
+      text-align: center; /* Centrar el texto en los divs */
+      margin-bottom: 20px; /* Espacio entre los divs */
+    }
+    .autores {
+      background-color: #30358C; /* Color de fondo */
+      color: white; /* Color del texto */
+      border-radius: 15px; /* Bordes redondeados */
+      padding: 10px; /* Agregar un poco de espacio alrededor del contenido */
+    }
+    .content-box {
+      margin: 20px 0; /* Espacio alrededor de la caja */
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f8f9fa; /* Color de fondo de la caja */
+      border-radius: 15px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la caja */
+    }
+    .content-box img {
+      max-width: 100%;
+      border-radius: 15px; /* Bordes redondeados para la imagen */
+      transition: transform 0.3s; /* Añadir transición suave */
+    }
+    .content-box img:hover {
+      transform: scale(1.05); /* Escalar la imagen en hover */
+      animation: animate__pulse 1s; /* Añadir animación pulse */
+    }
+    .content-box-text {
+      padding-right: 20px;
+    }
+    .comments-section {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .comment-box {
+      margin-bottom: 20px;
+    }
+    .image-container {
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      position: relative;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark justify-content-center sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="image/Recurso_3.png" height="110" class="d-inline-block align-top" alt="OE Editorial">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="serviciosedi.html">Servicios editoriales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="autores.html">Autores</a></li>
+              <li><a class="dropdown-item" href="material.html">Material de creación</a></li>
+              <li><a class="dropdown-item" href="aportes.html">Aportes</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container content-box mx-auto">
+    <div class="content-box-text col-md-8 mx-auto">
+      <img src="image/foro.jpg" class="animate__animated">
+    </div>
+  </div>
+
+  <div class="container content-box mx-auto">
+    <div class="content-box-text col-md-8 mx-auto">
+        <h2>El esfuerzo del sentir</h2>
+        <p>Aquí podrás expresarte de manera libre frente a nuestro tema expuesto, estamos para leer los que quieras compartir.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Sección de comentarios -->
+    <div class="comments-section">
+      <h2>Comentarios</h2>
+      <div class="comment-box">
+        <form id="comment-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Comentario</label>
+            <textarea class="form-control" id="comment" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      <div id="comments-list">
+        <!-- Aquí se mostrarán los comentarios -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+    <p>Copyright 2024 ¡OE! Editorial ©</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Cargar comentarios desde localStorage
+      loadComments();
+
+      document.getElementById('comment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+        if (name && comment) {
+          const commentList = document.getElementById('comments-list');
+          const newComment = document.createElement('div');
+          newComment.classList.add('content-box');
+          newComment.innerHTML = `
+            <div class="content-box-text">
+              <h5>${name}</h5>
+              <p>${comment}</p>
+            </div>
+          `;
+          commentList.appendChild(newComment);
+          saveComment(name, comment);
+          document.getElementById('name').value = '';
+          document.getElementById('comment').value = '';
+        }
+      });
+    });
+
+    function loadComments() {
+      const comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.forEach(comment => {
+        const commentList = document.getElementById('comments-list');
+        const newComment = document.createElement('div');
+        newComment.classList.add('content-box');
+        newComment.innerHTML = `
+          <div class="content-box-text">
+            <h5>${comment.name}</h5>
+            <p>${comment.text}</p>
+          </div>
+        `;
+        commentList.appendChild(newComment);
+      });
+    }
+
+    function saveComment(name, text) {
+      const comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments.push({ name, text });
+      localStorage.setItem('comments', JSON.stringify(comments));
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

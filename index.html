@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡OE! Editorial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/slyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    /* Estilos personalizados */
+    .navbar {
+      background-color: #30358C !important; /* Cambiar el color de fondo del navbar */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra al navbar */
+    }
+    .navbar-brand {
+      margin-right: 0; /* Eliminar el margen derecho de la marca */
+    }
+    .autores, .soy-oceana {
+      text-align: center; /* Centrar el texto en los divs */
+      margin-bottom: 20px; /* Espacio entre los divs */
+    }
+    .autores {
+      background-color: #30358C; /* Color de fondo */
+      color: white; /* Color del texto */
+      border-radius: 15px; /* Bordes redondeados */
+      padding: 10px; /* Agregar un poco de espacio alrededor del contenido */
+    }
+    .content-box {
+      margin: 20px 0; /* Espacio alrededor de la caja */
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f8f9fa; /* Color de fondo de la caja */
+      border-radius: 15px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la caja */
+    }
+    .content-box img {
+      max-width: 100%;
+      border-radius: 15px; /* Bordes redondeados para la imagen */
+    }
+    .content-box-text {
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark justify-content-center sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="image/Recurso_3.png" height="110" class="d-inline-block align-top" alt="OE Editorial">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="serviciosedi.html">Servicios editoriales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Más
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="autores.html">Autores</a></li>
+            <li><a class="dropdown-item" href="material.html">Material de creación</a></li>
+            <li><a class="dropdown-item" href="aportes.html">Aportes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleAutoplaying" class="carousel slide animate__animated animate__fadeInDown" data-bs-ride="carousel">
+    <div class="carousel-inner" id="inicio">
+      <div class="carousel-item active">
+        <img src="image/mockuplibro3.jpg" class="d-block w-100" alt="mockup">
+      </div>
+      <div class="carousel-item">
+        <img src="image/slidereditorial1.jpg" class="d-block w-100" alt="slider">
+      </div>
+      <div class="carousel-item">
+        <img src="image/mockuplibrodisponible.jpg" class="d-block w-100" alt="ya disponible">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Nueva caja con imagen a la derecha y texto a la izquierda -->
+<div class="container content-box mx-auto">
+  <div class="content-box-text col-md-8">
+    <h2>“Compartiendo sentires, nos curamos las heridas” </h2>
+    <p>Sumérgete en nuestro mundo de palabras, autores y resistencia, hecho por y para la tierrita.</p>
+  </div>
+  <div class="col-md-4">
+    <img src="image/NIS_6847.JPG" class="img-fluid" alt="Activación cultural - Centro Memoria - Bogotá">
+</div>
+
+</div>
+<div class="row">
+  <aside class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-flex  aling-items-center justify-content-end wow animate__animated animate__bounceInLeft">
+      <img src="image/portadaParaCard-02-02.jpg" alt="" height="600px" >
+  </aside>
+  <article class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 wow animate__animated animate__bounceInRight">
+    <section class="d-flex flex-column justify-content-start" style="margin: 30px;">
+        <h2 class="text-center"> ¡NUESTRA PRIMERA PUBLICACIÓN! </h2>
+        <p style="text-align: justify; margin-top: 30px;">
+            "Desterra Kardiaca" es un poemario escrito por la autora colombiana Oceana. Inspirado por la información encontrada en el libro 'Hasta la guerra tiene límites' del Informe Final de la Comisión de la Verdad, los poemas reflejan los sentimientos expresados en los testimonios de las personas entrevistadas en las recopilaciones de la Comisión de la Verdad.
+            
+            Es un poemario que te lleva a conectar con tus emociones más sensibles y vulnerables. A cada paso encontrarás las verdades crudas de los sentires en el conflicto armado de Colombia, y cómo estos nos ayudan a conocer las vivencias del otro y abrir los ojos ante la ignorancia. Toca temas como el desplazamiento, la desaparición y la violencia. 
+            
+            Desde ¡OE! Editorial, queremos seguir promoviendo la visibilización de estas problemáticas.
+        </p>
+    </section>
+</article>
+
+  
+</div>
+
+<!-- Cards -->
+<div class="container">
+  <div class="row wow animate__animated animate__bounceInRight" style="margin: 50px;">
+    <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" style="width: 18rem;">
+      <img src="image/portadaParaCard-02-02.jpg" class="card-img-top" alt="portadadesterra">
+      <div class="card-body">
+        <h5 class="card-title">DESTERRA KARDIACA</h5>
+        <p class="card-text">Aquí encontrarás un vistazo de este libro en dígital</p>
+        <a href="https://online.publuu.com/547780/1253062" class="btn btn-primary">VER LIBRO</a>
+      </div>
+    </div>
+
+    <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" style="padding-top: 100px;">
+      <img src="image/calca_sal.png" class="card-img-top" alt="sal">
+      <div class="card-body">
+        <h5 class="card-title">Sticker SALvar la vida</h5>
+        <p class="card-text">Aquí puedes adquirirla</p>
+        <a href="https://wa.me/573204760455?text=Hola%F0%9F%A6%91%0AMe%20gustar%C3%ADa%20comprar%20tu%20sticker%20de%20SALvar%20la%20vida%20c:"
+          class="btn btn-primary">COMPRAR</a>
+      </div>
+    </div>
+
+    <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" style="padding-top: 100px;">
+      <img src="image/calca_vaca.png" class="card-img-top" alt="vaquita">
+      <div class="card-body">
+        <h5 class="card-title">Sticker Vaquita desplazada</h5>
+        <p class="card-text">Aquí puedes adquirirla</p>
+        <a href="https://walink.co/dc74de" class="btn btn-primary">COMPRAR</a>
+      </div>
+    </div>
+    <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" style="padding-top: 100px;">
+      <img src="image/calca_tanqueta.png" class="card-img-top" alt="tanqueta">
+      <div class="card-body">
+        <h5 class="card-title">Sticker Tanqueta de flores</h5>
+        <p class="card-text">Aquí puedes adquirirla</p>
+        <a href="https://walink.co/e0bf19" class="btn btn-primary">COMPRAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container content-box mx-auto">
+    <div class="row">
+        <div class="content-box-text col-12 col-md-8">
+            <h4>CÓDIGO SPOTIFY</h4>
+            <p>Con este código tendrás acceso a la lista musical hecha para este libro.</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="image/codigospotify_Mesa de trabajo 1.png" class="img-fluid" alt="Activación cultural - Centro Memoria - Bogotá">
+        </div>
+    </div>
+</div>
+
+  
+  </div>
+</div>
+
+
+
+<footer class="p-4 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center d">
+  <p>Copyright 2024 ¡OE! Editorial ©</p>
+</footer>
+
+<!-- Aquí agregar el contenido de tu página -->
+    <!--aca colococo script de wow-->
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcfaf0;
+}
+
+
+footer{
+    background-color: #30358C;
+    color: white;
+}
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-box .btn {
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-icon {
+    width: 20px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 20px;
+    margin-right: 5px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-box .btn {
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Establece el color del texto a blanco */
+    background-color: #30358C; /* Ejemplo de fondo, ajusta según necesidad */
+    border: none; /* Quita el borde para un mejor estilo */
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Redondea las esquinas del botón */
+}
+
+
+.button-box .btn:hover {
+    opacity: 0.8; /* Efecto hover */
+}
+
+.button-icon {
+    width: 20px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 20px;
+    margin-right: 5px;
+}
+.autores, .soy-oceana {
+    text-align: center; /* Centrar el texto en los divs */
+    margin-bottom: 20px;
+}
+
+.autores {
+    background-color: #30358C;
+    color: #FBF6BF;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+.soy-oceana h3 {
+    font-size: 1rem; /* Tamaño de fuente base para móviles */
+}
+
+@media (min-width: 576px) {
+    .soy-oceana h3 {
+        font-size: 1.1rem; /* Tamaño de fuente para dispositivos pequeños */
+    }
+}
+
+@media (min-width: 768px) {
+    .soy-oceana h3 {
+        font-size: 1.2rem; /* Tamaño de fuente para tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    .soy-oceana h3 {
+        font-size: 1.3rem; /* Tamaño de fuente para desktops medianos */
+    }
+}
+
+@media (min-width: 1200px) {
+    .soy-oceana h3 {
+        font-size: 1.4rem; /* Tamaño de fuente para desktops grandes */
+    }
+}
+.titulo-contacto{
+    color: #30358C;
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+
+  /* Estilos para el botón */
+  .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacio superior para separar del párrafo */
+  }
+  .custom-button:hover {
+    background-color: #30358C;
+  }
+  .custom-button:active {
+    transform: translateY(2px);
+  }
+  /* Estilos para la animación del círculo */
+  .circle {
+    position: relative;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: pulse 1s infinite alternate;
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(0.8);
+      opacity: 0.7;
+    }
+    to {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+
